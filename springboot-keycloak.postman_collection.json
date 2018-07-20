@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "d513e3f5-c590-4aaa-8622-3991063ce029",
+		"name": "springboot-keycloak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/customers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJtMmlXME5obll2bFN3TGhvRXJ2TnoxQzdzSWtYcFdzaUE1T2hBbnVBTVA0In0.eyJqdGkiOiJlZjM0N2ZiZC1kYmQ2LTQyYjQtYThkNS1lZjQ3YmQzNmMyMjQiLCJleHAiOjE1MzIxMjUzMDgsIm5iZiI6MCwiaWF0IjoxNTMyMTI1MDA4LCJpc3MiOiJodHRwOi8vcmhzc28tbjEuaW86ODA4MC9hdXRoL3JlYWxtcy9SRURIQVQiLCJhdWQiOiJTUFJJTkdCT09UX0FSQ0hFVFlQRSIsInN1YiI6IjVlNDBmNDY1LTViNGEtNGNlZS1iZWFjLTg5MmZkMWIxMWRkNyIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNQUklOR0JPT1RfQVJDSEVUWVBFIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiY2UxODkwYzAtYTRlNy00MDhjLTkzYjEtMGJjY2ZiZGM0OTc0IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sIm5hbWUiOiJ1c2VyMSB1c2VyMSIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIxIiwiZ2l2ZW5fbmFtZSI6InVzZXIxIiwiZmFtaWx5X25hbWUiOiJ1c2VyMSJ9.C7AXosdx21rYC3dqOI6oaVT0P4aPcuI7fcOo7p9l-KTKt-ap3SAg2zSyo-azTwNPHEEDcJgCBwunvakLn0vvu2iyJKYLzHN2qPD2oRCrQBN5euM_oQszIdOOOnGOckKPoEH48PDMlnB5fq45foSsDBY-0qORQIiJsoq3H8fekeuRRRaYVgT1KDqJnCkaNHkT7qL_QszDSpBh_wUXODU2qb6k_qUhBuAFCGcim9GB1i-U9sU78mKtG-yLxXgPiIzeql2BMLTS-aJjbXXfU67La_evLTuIOFBfAzWDkwZ5h1DWCdPuQQ8Z88OekGW60beTUZQd2fxbBJxqFnJb1GzAsQ"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8089/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8089/admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJtMmlXME5obll2bFN3TGhvRXJ2TnoxQzdzSWtYcFdzaUE1T2hBbnVBTVA0In0.eyJqdGkiOiJiNjViNzAyZi0xYTFlLTRjODYtYmYyNS0yZjNjMDRmYWMyNmYiLCJleHAiOjE1MzIxMjU1MzksIm5iZiI6MCwiaWF0IjoxNTMyMTI1MjM5LCJpc3MiOiJodHRwOi8vcmhzc28tbjEuaW86ODA4MC9hdXRoL3JlYWxtcy9SRURIQVQiLCJhdWQiOiJTUFJJTkdCT09UX0FSQ0hFVFlQRSIsInN1YiI6IjVlNDBmNDY1LTViNGEtNGNlZS1iZWFjLTg5MmZkMWIxMWRkNyIsInR5cCI6IkJlYXJlciIsImF6cCI6IlNQUklOR0JPT1RfQVJDSEVUWVBFIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiYjBmZjQ0NmQtNGRkZC00ZjQyLTg3YzUtODY2MjdlMTY3ODcyIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7IlNQUklOR0JPT1RfQVJDSEVUWVBFIjp7InJvbGVzIjpbIkFETUlOSVNUUkFUT1IiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sIm5hbWUiOiJ1c2VyMSB1c2VyMSIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIxIiwiZ2l2ZW5fbmFtZSI6InVzZXIxIiwiZmFtaWx5X25hbWUiOiJ1c2VyMSJ9.BiXUgLoHuwwywlJ55eEcMEVL7DaTINS6RaSbRutV0tzv7rab7nRadQS9V481BXArLREVrV73BnfU6avoFHgZT4OPpxlhj6G2G6O8GCm0j6qgMt_h0HdLiKTlHrNoSEd58NunJomyf_fIYQSMW8EF-8BcWOQ0ImyoDMXxGiU_PUTqzVIRY1hCcDzpQ-bV5csl8BaqAVxT-F-270hGZGLpyl_NEKCcRRJ05FhEha6_U_kiDon2gR8iLrR4pkynZrbpKDHex1Neia9XSrf4mmQ7fSY-2PDs6FHWimCU6BnZOsAurdXTBavB88MhMI1nH4q-33bXlTw3YPAVRAXfJ7LDpA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8089/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/auth/realms/REDHAT/protocol/openid-connect/token USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "SPRINGBOOT_ARCHETYPE",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://rhsso-n1.io:8080/auth/realms/REDHAT/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"rhsso-n1",
+						"io"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"REDHAT",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
