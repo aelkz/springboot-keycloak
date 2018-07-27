@@ -19,7 +19,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan(basePackageClasses = KeycloakSecurityComponents.class, basePackages= {"com.redhat.rhsso"})
+@ComponentScan(basePackageClasses = KeycloakSecurityComponents.class)
 class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 
     // Submits the KeycloakAuthenticationProvider to the AuthenticationManager
@@ -48,13 +48,15 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 
         http
         .authorizeRequests()
-        .antMatchers("/admin*").hasRole("ADMINISTRATOR")
-        .anyRequest().permitAll();
+        .antMatchers("/admin*")
+        .hasRole("ADMINISTRATOR")
+        .anyRequest()
+        .permitAll();
 
         http
         .authorizeRequests()
         .antMatchers("/customers*")
-        .hasAnyRole("user","ROLE_USER")
+        .hasRole("COMMON_USER")
         .anyRequest()
         .permitAll();
 
